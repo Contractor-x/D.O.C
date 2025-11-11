@@ -1,9 +1,11 @@
- # D.O.C - Digital Oversight Companion
+# D.O.C - Digital Oversight Companion
+___
 
 ![D.O.C Logo](./frontend/public/logo.png)
 
-## 🏆 Hackathon Project - AI-Powered Medication Management Platform
+## Hackathon Project - AI-Powered Medication Management Platform
 
+## What Is D.O.C?
 D.O.C is an intelligent medication companion that helps patients manage their medications safely through AI-powered drug identification, age verification, dosage confirmation, and comprehensive health documentation.
 
 ---
