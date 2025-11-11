@@ -62,7 +62,7 @@ D.O.C provides *7* intelligent features:
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
