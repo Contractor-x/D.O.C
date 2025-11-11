@@ -74,8 +74,8 @@ ___
 
 Quick Start
 1. # Clone Repository
-git clone https://github.com/your-team/doc-medication-platform.git
-cd doc-medication-platform
+- git clone https://github.com/Contractor-x/D.O.C/tree/Collins
+- cd D.O.C
 
 2. # Frontend Setup
 cd frontend
