@@ -78,53 +78,55 @@ Quick Start
 - cd D.O.C
 
 2. # Frontend Setup
-cd frontend
-npm install
-cp .env.example .env
+- cd frontend
+- npm install
+- cp .env.example .env
 
 # Add your API keys to .env
-npm run dev
+- npm run dev
 3. Backend Setup
-cd backend
-python -m venv venv
-source venv/bin/activate 
+- cd backend
+- python -m venv venv
+- source venv/bin/activate 
 
 # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env
+- pip install -r requirements.txt
+- cp .env.example .env
 
 # Add your API keys to .env
-uvicorn app.main:app --reload
+- uvicorn app.main:app --reload
 
 4. # AI Services Setup
-cd ai-services
-pip install -r requirements.txt
-cp .env.example .env
+- cd ai-services
+- pip install -r requirements.txt
+- cp .env.example .env
 
 # Add your API keys to .env
-python -m ocr.drug_ocr  # Test OCR
+- python -m ocr.drug_ocr # Test OC
+  ---
+  
 ## Environment Variables
 
 # Frontend (.env)
-VITE_API_BASE_URL=http://localhost:8000/api/v1
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_key
+- VITE_API_BASE_URL=http://localhost:8000/api/v1
+- VITE_SUPABASE_URL=your_supabase_url
+- VITE_SUPABASE_ANON_KEY=your_supabase_key
 
 # Backend (.env)
-DATABASE_URL=postgresql://user:pass@localhost:5432/doc
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key
-SECRET_KEY=your_jwt_secret_key
-CLAUDE_API_KEY=your_claude_api_key
-OPENAI_API_KEY=your_openai_key
-GOOGLE_CLOUD_VISION_KEY=your_google_vision_key
+- DATABASE_URL=postgresql://user:pass@localhost:5432/doc
+- SUPABASE_URL=your_supabase_url
+- SUPABASE_KEY=your_supabase_key
+- SECRET_KEY=your_jwt_secret_key
+- CLAUDE_API_KEY=your_claude_api_key
+- OPENAI_API_KEY=your_openai_key
+- GOOGLE_CLOUD_VISION_KEY=your_google_vision_key
 
 # AI Services (.env)
-OPENFDA_API_KEY=not_required
-RXNORM_API_KEY=not_required
-PUBMED_API_KEY=your_pubmed_key
-CLAUDE_API_KEY=your_claude_api_key
-OPENAI_API_KEY=your_openai_key
+- OPENFDA_API_KEY=not_required
+- RXNORM_API_KEY=not_required
+- PUBMED_API_KEY=your_pubmed_key
+- CLAUDE_API_KEY=your_claude_api_key
+- OPENAI_API_KEY=your_openai_key
 
 ## API Endpoints
 Authentication
