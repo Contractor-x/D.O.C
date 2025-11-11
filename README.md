@@ -10,7 +10,7 @@ D.O.C is an intelligent medication companion that helps patients manage their me
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 - **40%** of medication errors are age-related
 - **7,000+** annual deaths from preventable medication mistakes
@@ -20,17 +20,17 @@ D.O.C is an intelligent medication companion that helps patients manage their me
 
 ---
 
-## 💡 Our Solution
+## Whats Our Solution?
 
-D.O.C provides 7 intelligent features:
+D.O.C provides *7* intelligent features:
 
-1. **📷 Camera Drug Scanner** - Identify drugs via photo, get instant descriptions
-2. **⚠️ Side Effects Checker** - Comprehensive side effect database
-3. **👴 Age Verification** - AI validates drug safety for patient's age
-4. **💊 Dosage Confirmation** - Verify prescribed dosage accuracy
-5. **🏥 Medical Triage** - Store documents, prescriptions, doctor contacts
-6. **🔬 Research Updates** - Latest drug news for cancer/terminal illnesses
-7. **📝 Patient Logging** - Voice/text notes sent directly to doctors
+1. **Camera Drug Scanner** - Identify drugs via photo, get instant descriptions
+2. **Side Effects Checker** - Comprehensive side effect database
+3. **Age Verification** - AI validates drug safety for patient's age
+4. **Dosage Confirmation** - Verify prescribed dosage accuracy
+5. **Medical Triage** - Store documents, prescriptions, doctor contacts
+6. **Research Updates** - Latest drug news for cancer/terminal illnesses
+7. **Patient Logging** - Voice/text notes sent directly to doctors
 
 **Unique Feature:** Handles multiple medications simultaneously
 
