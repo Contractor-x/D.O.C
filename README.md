@@ -36,7 +36,7 @@ D.O.C provides *7* intelligent features:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework:** React 18 + Vite
@@ -65,41 +65,52 @@ D.O.C provides *7* intelligent features:
 ## 📦 Installation & Setup
 
 ### Prerequisites
-```bash
+
 Node.js 18+
 Python 3.11+
 Git
 Tesseract OCR
+___
+
 Quick Start
-1. Clone Repository
+1. # Clone Repository
 git clone https://github.com/your-team/doc-medication-platform.git
 cd doc-medication-platform
-2. Frontend Setup
+
+2. # Frontend Setup
 cd frontend
 npm install
 cp .env.example .env
+
 # Add your API keys to .env
 npm run dev
 3. Backend Setup
 cd backend
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate 
+
+# On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env
+
 # Add your API keys to .env
 uvicorn app.main:app --reload
-4. AI Services Setup
+
+4. # AI Services Setup
 cd ai-services
 pip install -r requirements.txt
 cp .env.example .env
+
 # Add your API keys to .env
 python -m ocr.drug_ocr  # Test OCR
-🔑 Environment Variables
-Frontend (.env)
+## Environment Variables
+
+# Frontend (.env)
 VITE_API_BASE_URL=http://localhost:8000/api/v1
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_key
-Backend (.env)
+
+# Backend (.env)
 DATABASE_URL=postgresql://user:pass@localhost:5432/doc
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_supabase_key
@@ -107,13 +118,15 @@ SECRET_KEY=your_jwt_secret_key
 CLAUDE_API_KEY=your_claude_api_key
 OPENAI_API_KEY=your_openai_key
 GOOGLE_CLOUD_VISION_KEY=your_google_vision_key
-AI Services (.env)
+
+# AI Services (.env)
 OPENFDA_API_KEY=not_required
 RXNORM_API_KEY=not_required
 PUBMED_API_KEY=your_pubmed_key
 CLAUDE_API_KEY=your_claude_api_key
 OPENAI_API_KEY=your_openai_key
-🚀 API Endpoints
+
+## API Endpoints
 Authentication
 POST   /api/v1/auth/register
 POST   /api/v1/auth/login
@@ -154,7 +167,10 @@ POST   /api/v1/logs/voice
 GET    /api/v1/logs
 POST   /api/v1/logs/send-to-doctor
 GET    /api/v1/logs/analytics
-🎨 UI/UX Flow
+___
+
+
+## UI/UX Flow
 User Journey
 Login → Dashboard → Camera Scanner → Results → Side Effects → 
 Age Verification → Dosage Check → Save to Triage → Log Experience
@@ -203,7 +219,8 @@ Categorize logs (side effects, mood, pain level)
 Timeline view
 Send specific logs to doctor
 AI analysis of patterns
-🤖 AI Features & Models
+
+## AI Features & Models
 1. OCR Drug Identification
 Technology: Tesseract + Google Cloud Vision
 Accuracy: 92%+
@@ -258,7 +275,8 @@ Technology: Claude API (Anthropic)
 Purpose: Patient-friendly explanations
 Reading Level: 8th grade
 Languages: English, Spanish (expandable)
-📊 Database Schema
+
+## Database Schema
 Tables
 users
 id, email, password_hash, age, created_at
@@ -278,7 +296,8 @@ research_articles
 id, title, summary, illness_type, publication_date, source_url
 patient_logs
 id, user_id, log_type, content, voice_url, sent_to_doctor, created_at
-🧪 Testing
+
+## Testing
 Run Tests
 # Frontend tests
 cd frontend
@@ -291,31 +310,41 @@ pytest
 # AI services tests
 cd ai-services
 pytest
-🚢 Deployment
+
+# Deployment?
 Frontend (Vercel)
 cd frontend
 vercel deploy --prod
 Backend (Railway/Render)
 cd backend
+
 # Push to GitHub
-# Connect Railway/Render to repo
+# Connect repo to hosting platform.
 # Auto-deploy on push
 Environment
 Frontend: https://doc-app.vercel.app
 Backend API: https://doc-api.railway.app
 Documentation: https://doc-api.railway.app/docs
-👥 Team
-Frontend Developer - React UI/UX Implementation
-Backend Developer - FastAPI + Database Architecture
-AI Developer - ML Models + NLP + OCR Services
-📄 License
+___
+
+## Team
+*Frontend Developer* - React UI/UX Implementation
+
+*Backend Developer* - FastAPI + Database Architecture
+
+*AI Developer* - ML Models + NLP + OCR Services
+
+## License
 MIT License - See LICENSE file
-🙏 Acknowledgments
+
+## Acknowledgments
 OpenFDA for drug data
 Anthropic for Claude API
 Beers Criteria for geriatric medication guidelines
-All open-source contributors
+___
+
+## All open-source contributors
 📞 Support
 For issues: GitHub Issues
-For questions: doc-support@example.com
-Built with ❤️ for safer medication management
+For questions: dada4ash@example.com
+Built with 💲 for safer medication management
