@@ -300,33 +300,36 @@ patient_logs
 id, user_id, log_type, content, voice_url, sent_to_doctor, created_at
 
 ## Testing
-Run Tests
+- Run Tests
+
 # Frontend tests
 cd frontend
-npm test
+- npm test
 
 # Backend tests
 cd backend
-pytest
+- pytest
 
 # AI services tests
-cd ai-services
-pytest
+- cd ai-services
+- pytest
 
 # Deployment?
 Frontend (Vercel)
-cd frontend
-vercel deploy --prod
+- cd frontend
+- vercel deploy --prod
 Backend (Railway/Render)
-cd backend
+- cd backend
 
-# Push to GitHub
-# Connect repo to hosting platform.
-# Auto-deploy on push
-Environment
-Frontend: https://doc-app.vercel.app
-Backend API: https://doc-api.railway.app
-Documentation: https://doc-api.railway.app/docs
+___
+
+Push to GitHub
+Connect repo to hosting platform.
+Auto-deploy on push
+## Environment
+- Frontend: https://doc-app.vercel.app
+- Backend API: https://doc-api.railway.app
+- Documentation: https://doc-api.railway.app/docs
 ___
 
 ## Team
