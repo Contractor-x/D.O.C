@@ -1,1 +1,157 @@
+@ Vicky this is what you are to build
+Then for Auth we are ging to be using Clerk (https://clerk.com/) for authentication and user management. Please make sure to integrate Clerk into the frontend structure below.
 
+
+
+
+├── frontend/                          # FRONTEND DEVELOPER'S WORKSPACE
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── index.html
+│   ├── .env.example
+│   ├── .env
+│   │
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── logo.png
+│   │   └── robots.txt
+│   │
+│   ├── src/
+│   │   ├── main.jsx
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   │
+│   │   ├── assets/
+│   │   │   ├── images/
+│   │   │   │   ├── logo.svg
+│   │   │   │   ├── placeholder-drug.png
+│   │   │   │   └── doctor-icon.png
+│   │   │   └── icons/
+│   │   │       ├── camera.svg
+│   │   │       ├── warning.svg
+│   │   │       └── success.svg
+│   │   │
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── LoadingSpinner.jsx
+│   │   │   │   ├── ErrorBoundary.jsx
+│   │   │   │   ├── Toast.jsx
+│   │   │   │   └── Modal.jsx
+│   │   │   │
+│   │   │   ├── auth/
+│   │   │   │   ├── LoginForm.jsx
+│   │   │   │   ├── RegisterForm.jsx
+│   │   │   │   ├── ForgotPassword.jsx
+│   │   │   │   └── ProtectedRoute.jsx
+│   │   │   │
+│   │   │   ├── camera/
+│   │   │   │   ├── CameraCapture.jsx
+│   │   │   │   ├── DrugPreview.jsx
+│   │   │   │   ├── IdentificationResult.jsx
+│   │   │   │   └── MultipleDrugView.jsx
+│   │   │   │
+│   │   │   ├── sideEffects/
+│   │   │   │   ├── SideEffectCard.jsx
+│   │   │   │   ├── SideEffectList.jsx
+│   │   │   │   ├── SeverityBadge.jsx
+│   │   │   │   └── FilterOptions.jsx
+│   │   │   │
+│   │   │   ├── ageVerification/
+│   │   │   │   ├── AgeInputForm.jsx
+│   │   │   │   ├── SafetyResult.jsx
+│   │   │   │   ├── RiskIndicator.jsx
+│   │   │   │   └── RecommendationCard.jsx
+│   │   │   │
+│   │   │   ├── dosage/
+│   │   │   │   ├── DosageComparisonCard.jsx
+│   │   │   │   ├── PrescriptionUpload.jsx
+│   │   │   │   ├── DosageCalculator.jsx
+│   │   │   │   └── DoctorPrescriptionView.jsx
+│   │   │   │
+│   │   │   ├── triage/
+│   │   │   │   ├── DocumentUploader.jsx
+│   │   │   │   ├── DocumentList.jsx
+│   │   │   │   ├── DocumentViewer.jsx
+│   │   │   │   ├── DoctorContactCard.jsx
+│   │   │   │   ├── AddDoctorForm.jsx
+│   │   │   │   └── EmergencyContacts.jsx
+│   │   │   │
+│   │   │   ├── research/
+│   │   │   │   ├── ResearchFeed.jsx
+│   │   │   │   ├── ResearchCard.jsx
+│   │   │   │   ├── IllnessFilter.jsx
+│   │   │   │   ├── BookmarkButton.jsx
+│   │   │   │   └── ShareButton.jsx
+│   │   │   │
+│   │   │   └── logging/
+│   │   │       ├── TextLogInput.jsx
+│   │   │       ├── VoiceRecorder.jsx
+│   │   │       ├── LogList.jsx
+│   │   │       ├── LogDetail.jsx
+│   │   │       ├── SendToDoctor.jsx
+│   │   │       └── LogAnalytics.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.jsx
+│   │   │   │   ├── Register.jsx
+│   │   │   │   └── ForgotPassword.jsx
+│   │   │   │
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── CameraScanner.jsx
+│   │   │   ├── SideEffects.jsx
+│   │   │   ├── AgeVerification.jsx
+│   │   │   ├── DosageConfirmation.jsx
+│   │   │   ├── MedicalTriage.jsx
+│   │   │   ├── ResearchUpdates.jsx
+│   │   │   ├── PatientLogging.jsx
+│   │   │   └── Profile.jsx
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   ├── useCamera.js
+│   │   │   ├── useVoiceRecorder.js
+│   │   │   ├── useGeolocation.js
+│   │   │   ├── useLocalStorage.js
+│   │   │   └── useDebounce.js
+│   │   │
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   ├── ThemeContext.jsx
+│   │   │   ├── MedicationContext.jsx
+│   │   │   └── NotificationContext.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   ├── auth.service.js
+│   │   │   ├── drug.service.js
+│   │   │   ├── ocr.service.js
+│   │   │   ├── sideEffects.service.js
+│   │   │   ├── dosage.service.js
+│   │   │   ├── triage.service.js
+│   │   │   ├── research.service.js
+│   │   │   └── logging.service.js
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── constants.js
+│   │   │   ├── helpers.js
+│   │   │   ├── validators.js
+│   │   │   ├── formatters.js
+│   │   │   └── imageProcessing.js
+│   │   │
+│   │   └── styles/
+│   │       ├── global.css
+│   │       ├── variables.css
+│   │       └── animations.css
+│   │
+│   └── tests/
+│       ├── components/
+│       ├── pages/
+│       └── utils/
+│
