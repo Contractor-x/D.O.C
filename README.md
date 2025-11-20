@@ -352,4 +352,4 @@ ___
 📞 Support
 For issues: GitHub Issues
 For questions: dada4ash@example.com
-Built with 💲 for safer medication management
+Built for safer medication management
