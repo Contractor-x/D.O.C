@@ -1,4 +1,4 @@
-# D.O.C - Digital Oversight Companion
+# D.O.C - Digital Over~sight Companion
 ___
 
 ![D.O.C Logo](./frontend/public/logo.png)
